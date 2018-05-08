@@ -1,0 +1,83 @@
+{
+    "profiles":[
+                {
+                "name":"Sasha Smith",
+                "title":"Lead Analyst, UX",
+                "shortDescription":"This is a short description about Nick Eby.",
+                "imageURL":"profiles_smith",
+                "favorite":"Instagram"
+                },
+                {
+                "name":"Joe Rago",
+                "title":"Director of Digital Innovation",
+                "shortDescription":"Joe Rago serves as the Director of Digital Innovation at Ulta Beauty. Prior to that, he served as Ulta’s Director of Mobility Development where he led the teams who built the highly rated Ulta Beauty iOS & Android applications, along with enterprise applications used in all of Ulta’s 1100+ stores. Joe is a lifelong Chicago resident who lives with his family in the western suburbs, while enjoying playing & coaching sports and always listening for the next big “hit song”.",
+                "twitter":"@jrago16",
+                "imageURL":"profiles_rago",
+                "favorite":"Apple Music"
+                },
+                {
+                "name":"Jennifer Urban",
+                "title":"Sr. Manager, UX",
+                "shortDescription":"This is a short description about Nick Eby.",
+                "imageURL":"profiles_jurban",
+                "favorite":"Ulta App"
+                },
+                {
+                "name":"Kevin Seiler",
+                "title":"Sr. Designer, UX",
+                "shortDescription":"This is a short description about Nick Eby.",
+                "imageURL":"profiles_kseiler",
+                "favorite":"Instagram"
+                },
+                {
+                "name":"Akash Luthra",
+                "title":"Sr. Designer, UX",
+                "shortDescription":"This is a short description about Nick Eby.",
+                "imageURL":"profiles_aluthra",
+                "favorite":"Facebook"
+                },
+                {
+                "name":"Roy Gibson",
+                "title":"Director Digital Experience & Operations",
+                "shortDescription":"I have been working at Ulta for 5+ years supporting eCommerce and Mobility initiatives.  I have worked in the Retail industry for 20+ years with stints at Sears, Gap and Sainsbury’s (via Accenture) primarily in IT roles.",
+                "imageURL":"profiles_rgibson",
+                "favorite":"Chase Bank, Ulta!, Boggle with Friends, Starbucks"
+                },
+                {
+                "name":"Jeremiah Bonham",
+                "title":"Sr. Designer, UX",
+                "shortDescription":"This is a short description about Nick Eby.",
+                "imageURL":"profiles_jbonham",
+                "favorite":"Ulta App"
+                },
+                {
+                "name":"Shaun Toomey",
+                "title":"Lead iOS Developer, Mobility",
+                "shortDescription":"This is a short description about Nick Eby.",
+                "imageURL":"profiles_stoomey",
+                "favorite":"Ulta App"
+                },
+                {
+                "name":"Nicholas Eby",
+                "title":"Lead iOS Developer, Mobility",
+                "shortDescription":"This is a short description about Nick Eby.",
+                "twitter":"@nicholasleby",
+                "imageURL":"profiles_neby",
+                "favorite":"Ulta App"
+                },
+                {
+                "name":"Robert Figueras",
+                "title":"Sr. Manager, UX",
+                "shortDescription":"This is a short description about Nick Eby.",
+                "imageURL":"profiles_rfigueras",
+                "favorite":"Ulta App"
+                },
+                {
+                "name":"Alan Evans",
+                "title":"Lead iOS Developer, Mobility",
+                "shortDescription":"This is a short description about Nick Eby.",
+                "imageURL":"profiles_aevans",
+                "favorite":"Ulta App"
+                }
+                ]
+}
