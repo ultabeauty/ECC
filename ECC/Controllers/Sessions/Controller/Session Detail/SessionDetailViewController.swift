@@ -23,6 +23,10 @@ class SessionDetailViewController: UIViewController
     @IBOutlet weak var takeawaysStackView: UIStackView!
     @IBOutlet weak var sessionImageView: UIImageView!
 
+    @IBOutlet weak var speakerView: UIView!
+    @IBOutlet weak var takeawayView: UIView!
+
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -61,6 +65,13 @@ class SessionDetailViewController: UIViewController
     
     func addSpeakers()
     {
+        if(session?.authors.count == 0)
+        {
+            speakerView.isHidden = true
+            return
+        }
+        
+        
         //Clean up
         for v in speakersView.subviews
         {
@@ -98,6 +109,14 @@ class SessionDetailViewController: UIViewController
     
     func addTakeaways()
     {
+        
+        if(session?.takeaways?.count == 0)
+        {
+            takeawayView.isHidden = true
+            return
+        }
+        
+        
         //Clean up
         let v = takeawaysStackView.arrangedSubviews[0]
         takeawaysStackView.removeArrangedSubview(v)
@@ -156,8 +175,12 @@ class SessionDetailViewController: UIViewController
     
     
     
-    
-    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .slide
+    }
     
     
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SessionViewController: UICollectionViewController
+class SessionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout
 {
     // MARK: - Properties
     var sessions = [Session]()
@@ -87,36 +87,69 @@ class SessionViewController: UICollectionViewController
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        guard let cell : SessionCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SessionCollectionCell", for: indexPath) as? SessionCollectionCell else { return UICollectionViewCell() }
-        
-        //Image
-        cell.sessionImageView?.image = UIImage.init(named: sessions[indexPath.row].imageURL!)
-        
         let session = sessions[indexPath.row]
-        
-        //Category
-        cell.categoryLabel?.text = session.categoryToDisplayString()
-        
-        //Title
-        cell.titleLabel?.text = session.title
-        
-        //Badge
-        cell.badge?.badgeType = session.category
-        
-        //Date
-        cell.dateLabel?.text = session.dateToDisplayString()
-        
-        //Short Description
-        cell.descriptionLabel?.text = session.shortDescription
-                
-        //Session #
-        cell.sessionViewLabel?.text = String(format: "%.2d", indexPath.row)
-        
-        return cell
+
+        if session.category == 9
+        {
+            guard let cell : SessionCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "BreakCollectionCell", for: indexPath) as? SessionCollectionCell else { return UICollectionViewCell() }
+            
+            //Category
+            cell.categoryLabel?.text = session.categoryToDisplayString()
+            
+            //Title
+            cell.titleLabel?.text = session.title
+            
+            //Date
+            cell.dateLabel?.text = session.dateToDisplayString()
+            
+            return cell
+        }
+        else
+        {
+            guard let cell : SessionCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SessionCollectionCell", for: indexPath) as? SessionCollectionCell else { return UICollectionViewCell() }
+            
+            //Image
+            cell.sessionImageView?.image = UIImage.init(named: sessions[indexPath.row].imageURL!)
+            
+            //Category
+            cell.categoryLabel?.text = session.categoryToDisplayString()
+            
+            //Title
+            cell.titleLabel?.text = session.title
+            
+            //Badge
+            cell.badge?.badgeType = session.category
+            
+            //Date
+            cell.dateLabel?.text = session.dateToDisplayString()
+            
+            //Short Description
+            cell.descriptionLabel?.text = session.shortDescription
+            
+            //Session #
+            cell.sessionViewLabel?.text = String(format: "%.2d", indexPath.row)
+            
+            return cell
+        }
     }
     
- 
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
+    {
+        let session = sessions[indexPath.row]
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+
+        if session.category == 9
+        {
+            return CGSize.init(width: collectionView.frame.size.width - layout.sectionInset.left - layout.sectionInset.right, height: 102)
+        }
+        else
+        {
+            return CGSize.init(width: collectionView.frame.size.width - layout.sectionInset.left - layout.sectionInset.right, height: 230)
+        }
+    }
+
     
     // MARK: - Navigation
     @IBAction func unwindSegue(segue:UIStoryboardSegue) { }

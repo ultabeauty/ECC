@@ -34,7 +34,6 @@
 		A59E1ACC20672E1D00C0DF3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59E1ACA20672E1D00C0DF3A /* Main.storyboard */; };
 		A59E1ACE20672E1D00C0DF3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59E1ACD20672E1D00C0DF3A /* Assets.xcassets */; };
 		A59E1AD120672E1D00C0DF3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59E1ACF20672E1D00C0DF3A /* LaunchScreen.storyboard */; };
-		A59E1AE120672EB500C0DF3A /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E1AE020672EB500C0DF3A /* SessionsViewController.swift */; };
 		A59E1AE620672EF600C0DF3A /* ProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E1AE520672EF600C0DF3A /* ProfilesViewController.swift */; };
 		A59E1AE820672F0400C0DF3A /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E1AE720672F0400C0DF3A /* ResourcesViewController.swift */; };
 		A59E1AEA20672F0D00C0DF3A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E1AE920672F0D00C0DF3A /* MapViewController.swift */; };
@@ -75,7 +74,6 @@
 		A59E1ACD20672E1D00C0DF3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A59E1AD020672E1D00C0DF3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A59E1AD220672E1D00C0DF3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A59E1AE020672EB500C0DF3A /* SessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
 		A59E1AE520672EF600C0DF3A /* ProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesViewController.swift; sourceTree = "<group>"; };
 		A59E1AE720672F0400C0DF3A /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		A59E1AE920672F0D00C0DF3A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -285,7 +283,6 @@
 				A59E1AEE206742BD00C0DF3A /* Model */,
 				A59E1AEF206742C400C0DF3A /* View */,
 				A59E1AF0206742CC00C0DF3A /* Controller */,
-				A59E1AE020672EB500C0DF3A /* SessionsViewController.swift */,
 				8509FAE92098BE4F00F4CD5E /* SessionViewController.swift */,
 			);
 			path = Sessions;
@@ -324,8 +321,8 @@
 		A59E1AEB20672F1600C0DF3A /* Session Detail */ = {
 			isa = PBXGroup;
 			children = (
+				A5ECFB8120A2328D004E1EC1 /* View */,
 				A59E1AEC20672F2500C0DF3A /* SessionDetailViewController.swift */,
-				857FDF0720A0D2A500A3E4F8 /* UIStackView+BackgroundColor.swift */,
 			);
 			path = "Session Detail";
 			sourceTree = "<group>";
@@ -361,6 +358,14 @@
 			isa = PBXGroup;
 			children = (
 				A5E9972F20902313007B9CC4 /* SchoolSelectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5ECFB8120A2328D004E1EC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				857FDF0720A0D2A500A3E4F8 /* UIStackView+BackgroundColor.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -469,7 +474,6 @@
 				A55AD82E206B369E002562DB /* ProfileCell.swift in Sources */,
 				A59E1AED20672F2500C0DF3A /* SessionDetailViewController.swift in Sources */,
 				8509FAEC2098BF7A00F4CD5E /* SessionCollectionCell.swift in Sources */,
-				A59E1AE120672EB500C0DF3A /* SessionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

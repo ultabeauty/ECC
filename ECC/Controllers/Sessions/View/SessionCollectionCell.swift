@@ -30,7 +30,7 @@ class SessionCollectionCell: UICollectionViewCell
 
         //Create Circle
         //backgroundColor and clipsToBounds set in IB
-        sessionView.layer.cornerRadius = sessionView.frame.size.height / 2
+        sessionView?.layer.cornerRadius = sessionView.frame.size.height / 2
 
     }
     

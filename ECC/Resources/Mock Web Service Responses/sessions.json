@@ -7,16 +7,8 @@
                 "category":0,
                 "imageURL":"utility",
                 "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
-                "takeaways":[
-                             "This is a takeaway",
-                             "This is a longer takeaway and should wrap properly",
-                             "This is a medium takeaway",
-                             "This is also a takeaway",
-                             "This is a long takeaway and should wrap"
-                             ],
-                "authors":[
-                
-                ]
+                "takeaways":[],
+                "authors":[]
                 },
                 {
                 "title":"Introduction: Welcome to Ulta's Day of Code.",
@@ -176,7 +168,7 @@
                 "title":"Break",
                 "shortDescription":"This is a short description.",
                 "timestamp":"2018-05-22T11:30:00-05:00",
-                "category":0,
+                "category":9,
                 "imageURL":"lunch",
                 "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
                 "takeaways":[
@@ -329,13 +321,7 @@
                 "category":0,
                 "imageURL":"business",
                 "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
-                "takeaways":[
-                             "This is a takeaway",
-                             "This is a longer takeaway and should wrap properly",
-                             "This is a medium takeaway",
-                             "This is also a takeaway",
-                             "This is a long takeaway and should wrap"
-                             ],
+                "takeaways":[],
                 "authors":[
                            {
                            "name":"Joe Rago",

@@ -115,7 +115,10 @@ class Session: Codable
         {
             return "Dev"
         }
-        
+        else if(self.category == 9)
+        {
+            return "Break"
+        }
         return "General"
     }
     
