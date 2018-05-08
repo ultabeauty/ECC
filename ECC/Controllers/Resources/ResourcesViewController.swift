@@ -36,7 +36,6 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
     {
         super.viewDidAppear(animated)
         
-        tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning()

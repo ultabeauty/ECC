@@ -19,6 +19,7 @@ class OnboardingViewController: UIViewController, SchoolSelectionViewDelegate
         
         //Override the Global colors
         navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.init(named: "Dark_Color") ?? UIColor.black]
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.init(named: "Dark_Color") ?? UIColor.black]
         navigationController?.navigationBar.barStyle = UIBarStyle.default
         
@@ -84,7 +85,7 @@ class OnboardingViewController: UIViewController, SchoolSelectionViewDelegate
         UINavigationBar.appearance().barStyle = .black
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
         changeIcon(school: school)
     }

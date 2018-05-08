@@ -1,14 +1,22 @@
 {
     "sessions":[
                 {
-                "title":"Arrive at Ulta Chicago Office",
+                "title":"Student Arrival & Check-In",
                 "shortDescription":"Students will arive at the Ulta Chicago location at 120 s riverside. Please take the elevator up to the 15th floor and the receptionist will direct you to the meeting rooms.",
                 "timestamp":"2018-05-22T09:30:00-05:00",
                 "category":0,
                 "imageURL":"utility",
                 "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-                "authors":[{ "name" : "Joe Rago", "title" : "Director, Digitial Innovation", "imageURL":"profiles_rago" }, { "name" : "Joe Blue", "title" : "Director, Digitial Innovation", "imageURL":"profiles_kseiler" }, { "name" : "Joe Yellow", "title" : "Director, Digitial Innovation", "imageURL":"profiles_jurban" }]
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                
+                ]
                 },
                 {
                 "title":"Introduction: Welcome to Ulta's Day of Code.",
@@ -16,152 +24,347 @@
                 "timestamp":"2018-05-22T10:00:00-05:00",
                 "category":0,
                 "imageURL":"business",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[{ "name" : "Joe Rago", "title" : "Director, Digitial Innovation" }]
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Joe Rago",
+                           "title":"Director, Digitial Innovation",
+                           "imageURL":"profiles_jrago"
+                           }
+                           ]
                 },
                 {
-                "title":"Session 1: Gathering Requirements",
-                "shortDescription":"This is a short description.",
-                "timestamp":"2018-05-22T10:30:00-05:00",
+                "title":"Ulta Beauty Overview",
+                "shortDescription":"Today we'll learn about the entire development process, from gathering requiremnts, to writing code, and finally shipping our app to the App Store!",
+                "timestamp":"2018-05-22T10:05:00-05:00",
                 "category":1,
                 "imageURL":"business",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[{ "name" : "Sasha Smith", "title" : "UX Manager, Ecommerce" }]
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Jeff Hamm",
+                           "title":"VP, Digitial Innovation",
+                           "imageURL":"profiles_jrago"
+                           }
+                           ]
                 },
                 {
-                "title":"Session 2: UX - User Experience",
+                "title":"Gathering Requirements",
                 "shortDescription":"This is a short description.",
-                "timestamp":"2018-05-22T10:45:00-05:00",
+                "timestamp":"2018-05-22T10:15:00-05:00",
+                "category":1,
+                "imageURL":"business",
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Sasha Smith",
+                           "title":"UX Manager, Ecommerce",
+                           "imageURL":"profiles_ssmith"
+                           }
+                           ]
+                },
+                {
+                "title":"User Experience (UX)",
+                "shortDescription":"This is a short description.",
+                "timestamp":"2018-05-22T10:30:00-05:00",
                 "category":2,
                 "imageURL":"cx",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[{ "name" : "Jenny Urban", "title" : "UX Manager, Ecommerce" }]
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Jenny Urban",
+                           "title":"UX Manager, Ecommerce",
+                           "imageURL":"profiles_jurban"
+                           }
+                           ]
                 },
                 {
-                "title":"Session 3: Design",
+                "title":"Design",
                 "shortDescription":"How to create and prepare assets to be used in a iOS app.",
-                "timestamp":"2018-05-22T11:00:00-05:00",
+                "timestamp":"2018-05-22T10:45:00-05:00",
                 "category":3,
                 "imageURL":"ui",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[{ "name" : "Kevin Seiler", "title" : "Sr. Designer, Ecommerce" }]
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Kevin Seiler",
+                           "title":"Sr. Designer, Ecommerce",
+                           "imageURL":"profiles_kseiler"
+                           }
+                           ]
                 },
                 {
-                "title":"Session 4: Quality Assurance",
-                "shortDescription":"This is a short description.",
-                "timestamp":"2018-05-22T11:15:00-05:00",
-                "category":4,
-                "imageURL":"business",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[{ "name" : "Akash Luthra", "title" : "QA Lead, Mobility" } ]
-                },
-                {
-                "title":"Session 5: Welcome to Xcode",
+                "title":"Welcome to Xcode",
                 "shortDescription":"We'll show you how to get Xcode set up on your machine, and we'll write our first line of code.",
-                "timestamp":"2018-05-22T11:30:00-05:00",
+                "timestamp":"2018-05-22T11:00:00-05:00",
                 "category":5,
                 "imageURL":"dev",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[{ "name" : "Jeremiah Bonham", "title" : "Developer, Mobility" } ]
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Jeremiah Bonham",
+                           "title":"Developer, Mobility",
+                           "imageURL":"profiles_jbonham"
+                           }
+                           ]
+                },
+                {
+                "title":"Web Services & Data Models",
+                "shortDescription":"This is a short description.",
+                "timestamp":"2018-05-22T11:15:00-05:00",
+                "category":5,
+                "imageURL":"dev",
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Shaun Toomey",
+                           "title":"Sr. Developer, Mobility",
+                           "imageURL":"profiles_stoomey"
+                           }
+                           ]
                 },
                 {
                 "title":"Break",
                 "shortDescription":"This is a short description.",
-                "timestamp":"2018-05-22T11:45:00-05:00",
+                "timestamp":"2018-05-22T11:30:00-05:00",
                 "category":0,
                 "imageURL":"lunch",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[]
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                
+                ]
                 },
                 {
-                "title":"Lunch!",
+                "title":"Lunch & Panel Discussion",
                 "shortDescription":"This is a short description.",
                 "timestamp":"2018-05-22T12:00:00-05:00",
                 "category":0,
-                "imageURL":"pizza",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[]
+                "imageURL":"lunch",
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Shaun Toomey",
+                           "title":"Sr. Developer, Mobility",
+                           "imageURL":"profiles_stoomey"
+                           }
+                           ]
                 },
                 {
-                "title":"Session 6: Web Services & Data Models",
+                "title":"Quality Assurance",
                 "shortDescription":"This is a short description.",
                 "timestamp":"2018-05-22T12:15:00-05:00",
-                "category":5,
-                "imageURL":"dev",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[{ "name" : "Shaun Toomey", "title" : "Sr. Developer, Mobility" } ]
+                "category":4,
+                "imageURL":"business",
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Akash Luthra",
+                           "title":"QA Lead, Mobility",
+                           "imageURL":"profiles_aluthra"
+                           }
+                           ]
                 },
                 {
-                "title":"Session 7: Implementing a Feature",
+                "title":"Implementing a Feature",
                 "shortDescription":"This is a short description.",
                 "timestamp":"2018-05-22T12:30:00-05:00",
                 "category":5,
                 "imageURL":"dev",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[{ "name" : "Nick Eby", "title" : "Lead Developer, Digital Innovation" } ]
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Nick Eby",
+                           "title":"Lead Developer, Digital Innovation",
+                           "imageURL":"profiles_neby"
+                           }
+                           ]
                 },
                 {
-                "title":"Session 8: Debugging",
+                "title":"Code Debugging",
                 "shortDescription":"This is a short description.",
                 "timestamp":"2018-05-22T12:45:00-05:00",
                 "category":5,
                 "imageURL":"dev",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[{ "name" : "Robert Figueras", "title" : "Developer, Mobility" }]
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Robert Figueras",
+                           "title":"Developer, Mobility",
+                           "imageURL":"profiles_rfigueras"
+                           }
+                           ]
                 },
                 {
-                "title":"Session 9: Uploading to the App Store",
+                "title":"Releasing an App",
                 "shortDescription":"This is a short description.",
                 "timestamp":"2018-05-22T13:00:00-05:00",
                 "category":5,
                 "imageURL":"dev",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[{ "name" : "Allan Evans", "title" : "Lead Developer, Mobility" }]
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Allan Evans",
+                           "title":"Lead Developer, Mobility",
+                           "imageURL":"profiles_aevans"
+                           }
+                           ]
+                },
+                {
+                "title":"App Marketing",
+                "shortDescription":"This is a short description.",
+                "timestamp":"2018-05-22T13:15:00-05:00",
+                "category":1,
+                "imageURL":"business",
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Holly Hauser",
+                           "title":"Lead Developer, Mobility",
+                           "imageURL":"profiles_aevans"
+                           }
+                           ]
                 },
                 {
                 "title":"Q & A",
                 "shortDescription":"This is a short description.",
-                "timestamp":"2018-05-22T13:15:00-05:00",
+                "timestamp":"2018-05-22T13:30:00-05:00",
                 "category":0,
                 "imageURL":"business",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-
-                "authors":[]
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Joe Rago",
+                           "title":"Lead Developer, Mobility",
+                           "imageURL":"profiles_jrago"
+                           }
+                           ]
                 },
                 {
                 "title":"Closing Statements",
                 "shortDescription":"This is a short description.",
-                "timestamp":"2018-05-22T13:30:00-05:00",
+                "timestamp":"2018-05-22T13:45:00-05:00",
                 "category":0,
                 "imageURL":"business",
-                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.\n\nWe designed Swift to be easy to use. It lets you see what you’re creating with code as you write it. Type your code on the left and immediately see the result on the right. It uses lots of words and phrases you already know, like “print,” “add,” and “remove.” And Swift is not just great for getting started with code — it’s also super powerful. In fact, some of the world’s most popular apps are created in Swift.\n\nCode powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order. When you want to know if you should eat that pizza, code helps you keep track and decide.",
-                "takeaways":["This is a takeaway", "This is a longer takeaway and should wrap properly", "This is a medium takeaway", "This is also a takeaway", "This is a long takeaway and should wrap"],
-                "authors":[{ "name" : "Joe Rago", "title" : "Director, Digitial Innovation" }]
+                "longDescription":"Code powers virtually everything around us. When you turn your car on, code lets your key talk to the engine. When you want pizza, code places your online order.\n\nWhen you want to know if you should eat that pizza, code helps you keep track and decide. And when you use your favorite apps, code lets you send a message, share a photo, or swap faces with your cat.",
+                "takeaways":[
+                             "This is a takeaway",
+                             "This is a longer takeaway and should wrap properly",
+                             "This is a medium takeaway",
+                             "This is also a takeaway",
+                             "This is a long takeaway and should wrap"
+                             ],
+                "authors":[
+                           {
+                           "name":"Michelle Pacynki",
+                           "title":"Director, Digitial Innovation",
+                           "imageURL":"profiles_jrago"
+                           }
+                           ]
                 }
                 ]
 }

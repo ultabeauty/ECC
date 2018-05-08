@@ -18,6 +18,8 @@ class SessionViewController: UICollectionViewController
     {
         super.viewDidLoad()
     
+        self.navigationItem.rightBarButtonItem = nil
+        
         initCollectioView()
         initData()//since data is local file, we can instantiate in viewDidLoad
     }
@@ -25,9 +27,7 @@ class SessionViewController: UICollectionViewController
     override func viewDidAppear(_ animated: Bool)
     {
         super.viewDidAppear(animated)
-    
-        collectionView?.reloadData()
-    
+        
         initOnboarding()
     }
     

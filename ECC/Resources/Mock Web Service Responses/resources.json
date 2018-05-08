@@ -21,7 +21,15 @@
                  "shortDescription":"This is a short description.",
                  "source":"Apple, Inc.",
                  "link":"https://www.ulta.com/app/",
-                 "imageURL":"document",
+                 "imageURL":"website",
+                 "type" : 2
+                 },
+                 {
+                 "title":"ECC Source Code",
+                 "shortDescription":"The source code for the ECC code app we built for this event. Feel free to explore!",
+                 "source":"GitHub, Inc",
+                 "link":"https://github.com/ultabeauty/ECC",
+                 "imageURL":"code",
                  "type" : 2
                  },
                  {
@@ -29,7 +37,7 @@
                  "shortDescription":"Swift Playgrounds is a revolutionary app for iPad that makes it fun to learn and experiment with code.",
                  "source":"Apple, Inc.",
                  "link":"https://www.google.com",
-                 "imageURL":"document",
+                 "imageURL":"code",
                  "type" : 0
                  },
                  {
@@ -37,7 +45,7 @@
                  "shortDescription":"This course is designed to help you build a solid foundation in programming fundamentals using Swift as the language.",
                  "source":"Apple, Inc.",
                  "link":"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=1118575552&mt=11&v0=www-ae-education-everyone-can-code-book-app-development-swift-preview",
-                 "imageURL":"document",
+                 "imageURL":"code",
                  "type" : 0
                  },
                  {
@@ -45,7 +53,7 @@
                  "shortDescription":"This Teacher Guide is designed to help you bring Swift Playgrounds.",
                  "source":"Apple, Inc.",
                  "link":"https://www.google.com",
-                 "imageURL":"document",
+                 "imageURL":"code",
                  "type" : 0
                  },
                  {
@@ -53,7 +61,7 @@
                  "shortDescription":"This course is designed to teach you the skills needed to be an app developer capable of bringing your own ideas to life. Whether you’re new to coding or want to expand your skills, by the end of this course you should be able to build a fully functioning app of your own design.",
                  "source":"Apple, Inc.",
                  "link":"https://itunes.apple.com/book/id1219117996",
-                 "imageURL":"document",
+                 "imageURL":"code",
                  "type" : 0
                  },
                  {
@@ -61,7 +69,7 @@
                  "shortDescription":"This is a short description.",
                  "source":"Apple, Inc.",
                  "link":"https://www.google.com",
-                 "imageURL":"document",
+                 "imageURL":"code",
                  "type" : 0
                  }
                  ]

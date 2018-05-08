@@ -29,7 +29,6 @@ class ProfilesViewController: UIViewController, UITableViewDelegate, UITableView
     {
         super.viewDidAppear(animated)
         
-        tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning()

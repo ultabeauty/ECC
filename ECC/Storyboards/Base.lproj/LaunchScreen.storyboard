@@ -20,7 +20,7 @@
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="ecc_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ExK-or-rMy">
                                 <rect key="frame" x="44" y="58" width="287" height="75"/>
-                                <color key="tintColor" name="Dark Grey"/>
+                                <color key="tintColor" name="Dark_Grey"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kL9-tu-VGi">
                                 <rect key="frame" x="111" y="533" width="152" height="96"/>
@@ -33,7 +33,7 @@
                                     </label>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="ulta_logo" translatesAutoresizingMaskIntoConstraints="NO" id="I8m-nC-v1P">
                                         <rect key="frame" x="0.0" y="33" width="152" height="63"/>
-                                        <color key="tintColor" name="Dark Grey"/>
+                                        <color key="tintColor" name="Dark_Grey"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,7 +65,7 @@
     <resources>
         <image name="ecc_logo" width="287" height="75"/>
         <image name="ulta_logo" width="152" height="63"/>
-        <namedColor name="Dark Grey">
+        <namedColor name="Dark_Grey">
             <color red="0.18799999356269836" green="0.18799999356269836" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>

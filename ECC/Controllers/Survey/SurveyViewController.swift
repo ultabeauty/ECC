@@ -14,35 +14,41 @@ class SurveyViewController: UIViewController, WKNavigationDelegate {
     // MARK: - Outlets
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var completedView: UIView!
+    @IBOutlet weak var progressView: UIProgressView!
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
         print("survey: vdl")
-        
+
+        //Defaults
         webView.isHidden = true
         completedView.isHidden = true
-        
-        // Do any additional setup after loading the view.
+        progressView.progress = 0
+        progressView.isHidden = false
+
         initWebView()
     }
 
+    
+    // MARK: - Lifecycle
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
+    // MARK: - WebView
     func initWebView()
     {
         webView.navigationDelegate = self
         webView.load(URLRequest.init(url: URL.init(string: "https://www.surveymonkey.com/r/WCTNVDV")!))
+        webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
     }
     
     
-    
+    // MARK: - WKNavigationDelegate
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void)
     {
         print(navigationAction.request.url?.absoluteString ?? "")
@@ -69,16 +75,34 @@ class SurveyViewController: UIViewController, WKNavigationDelegate {
         }
     }
 
-
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!)
+    {
+        progressView.isHidden = true
+        
+        insertContentsOfCSSFile(into: webView)
     }
-    */
-
+    
+    
+    
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)
+    {
+        if keyPath == "estimatedProgress" {
+            progressView.progress = Float(webView.estimatedProgress)
+        }
+    }
+    
+    // MARK: - Utility
+    func insertContentsOfCSSFile(into webView: WKWebView)
+    {
+        // This is more of a "hack" and is not guaranteed to work / also in a commercial grade app, we would customize this at the vendor level.
+        
+        let colour = "#636466"
+        
+        let css = ".survey-page .survey-page-header .survey-title-container { background-color : \(colour); } .sm-progressbar { background-color: \(colour); } .survey-page .question-number { color: \(colour); }"
+        let js = "var style = document.createElement('style'); style.innerHTML = '\(css)'; document.head.appendChild(style);"
+        
+        webView.evaluateJavaScript(js, completionHandler: nil)
+    }
 }

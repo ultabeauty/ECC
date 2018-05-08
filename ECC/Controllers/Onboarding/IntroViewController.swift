@@ -14,7 +14,7 @@ class IntroViewController: UIViewController {
     {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.tintColor = UIColor.init(named: "Dark Grey")
+        self.navigationController?.navigationBar.tintColor = UIColor.init(named: "Dark_Grey")
 
         self.navigationItem.hidesBackButton = true
         

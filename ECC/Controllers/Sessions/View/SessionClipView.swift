@@ -8,6 +8,8 @@
 
 import UIKit
 
+@IBDesignable
+
 class SessionClipView: UIView
 {
     // MARK: - Properties
@@ -16,7 +18,7 @@ class SessionClipView: UIView
     {
         super.awakeFromNib()
 
-        //Create Circle
+        clipsToBounds = true
 
     }
     
