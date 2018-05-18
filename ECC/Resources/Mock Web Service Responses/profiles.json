@@ -1,83 +1,104 @@
 {
     "profiles":[
                 {
-                "name":"Sasha Smith",
-                "title":"Lead Analyst, UX",
-                "shortDescription":"This is a short description about Nick Eby.",
-                "imageURL":"profiles_ssmith",
-                "favorite":"Instagram"
-                },
-                {
                 "name":"Joe Rago",
-                "title":"Director of Digital Innovation",
-                "shortDescription":"Joe Rago serves as the Director of Digital Innovation at Ulta Beauty. Prior to that, he served as Ulta’s Director of Mobility Development where he led the teams who built the highly rated Ulta Beauty iOS & Android applications, along with enterprise applications used in all of Ulta’s 1100+ stores. Joe is a lifelong Chicago resident who lives with his family in the western suburbs, while enjoying playing & coaching sports and always listening for the next big “hit song”.",
-                "twitter":"@jrago16",
+                "title":"Director, Digital Innovation",
+                "shortDescription":"Lifelong Chicago resident who lives with his family in the West suburbs, enjoys playing/coaching sports, and listening out for the for the next big song. Huge fan of the oxford comma.",
+                "twitter":"@joerago",
                 "imageURL":"profiles_jrago",
                 "favorite":"Apple Music"
                 },
                 {
-                "name":"Jennifer Urban",
-                "title":"Sr. Manager, UX",
-                "shortDescription":"This is a short description about Nick Eby.",
+                "name":"Jeff Hamm",
+                "title":"Vice President, E-Commerce",
+                "shortDescription":"Jeff is the leader of the 'Peloton Pack' at Ulta and has attended every concert event ever held at Wrigley Field.",
+                "imageURL":"profiles_jhamm",
+                "favorite":"Apple Music"
+                },
+                {
+                "name":"Jenny Urban",
+                "title":"Senior UX Manager, E-Commerce",
+                "shortDescription":"Speaking of high school, an interesting fact is that Jenny married her high school sweetheart.",
                 "imageURL":"profiles_jurban",
-                "favorite":"Ulta App"
+                "favorite":"Ulta Beauty"
+                },
+                {
+                "name":"Sasha Smith",
+                "title":"UX Analyst, E-Commerce",
+                "shortDescription":"Sasha is a former high school art club president, who was voted best smile in Senior Superlatives.",
+                "imageURL":"profiles_ssmith",
+                "favorite":"Instagram, Etsy"
                 },
                 {
                 "name":"Kevin Seiler",
-                "title":"Sr. Designer, UX",
-                "shortDescription":"This is a short description about Nick Eby.",
+                "title":"Senior Digital Designer, E-Commerce",
+                "shortDescription":"Kevin enjoys technology, music, and how design creates impact. He is also a self-proclaimed automotive junky.",
                 "imageURL":"profiles_kseiler",
-                "favorite":"Instagram"
-                },
-                {
-                "name":"Akash Luthra",
-                "title":"Sr. Designer, UX",
-                "shortDescription":"This is a short description about Nick Eby.",
-                "imageURL":"profiles_aluthra",
-                "favorite":"Facebook"
-                },
-                {
-                "name":"Roy Gibson",
-                "title":"Director Digital Experience & Operations",
-                "shortDescription":"I have been working at Ulta for 5+ years supporting eCommerce and Mobility initiatives.  I have worked in the Retail industry for 20+ years with stints at Sears, Gap and Sainsbury’s (via Accenture) primarily in IT roles.",
-                "imageURL":"profiles_rgibson",
-                "favorite":"Chase Bank, Ulta!, Boggle with Friends, Starbucks"
+                "favorite":"Spotify"
                 },
                 {
                 "name":"Jeremiah Bonham",
-                "title":"Sr. Designer, UX",
-                "shortDescription":"This is a short description about Nick Eby.",
+                "title":"Associate Developer, Mobility",
+                "shortDescription":"Jeremiah began his tenure at Ulta as our Summer 2016 intern and has worked on key Enterprise Mobility team initiatives such as Store 2 Door.",
                 "imageURL":"profiles_jbonham",
-                "favorite":"Ulta App"
+                "favorite":"Procreate"
                 },
                 {
                 "name":"Shaun Toomey",
-                "title":"Lead iOS Developer, Mobility",
-                "shortDescription":"This is a short description about Nick Eby.",
+                "title":"Senior Developer, Mobility",
+                "shortDescription":"In less than two years, Shaun has transformed the Ulta Beauty Android app, while also being a leading driver of Mobility architecture improvements.",
                 "imageURL":"profiles_stoomey",
-                "favorite":"Ulta App"
+                "favorite":"Ulta Beauty"
+                },
+                {
+                "name":"Michelle Pacynski",
+                "title":"Vice President, Digital Innovatioin",
+                "shortDescription":"Michelle is a huge fan of comic book heroes, with her favorite being Susan Storm of Fantastic Four fame.",
+                "imageURL":"profiles_mpacynski",
+                "favorite":"Ulta Beauty"
+                },
+                {
+                "name":"Jeff Klonowski",
+                "title":"Director, Digital Site Experience",
+                "shortDescription":"Jeff enjoys spending time with his wife & two daughters, playing golf, and building stuff!",
+                "imageURL":"profiles_jklonowski",
+                "favorite":"Flipboard, ESPN"
+                },
+                {
+                "name":"Roy Gibson",
+                "title":"Director, Digital Experience & Operations",
+                "shortDescription":"Roy has been working at Ulta for 5+ years and has worked in the retail industry for 20+ years with stints at Sears, Gap, and Sainsbury’s.",
+                "imageURL":"profiles_rgibson",
+                "favorite":"Chase Bank, Ulta Beauty, Boggle with Friends, Starbucks, CNN"
                 },
                 {
                 "name":"Nicholas Eby",
-                "title":"Lead iOS Developer, Mobility",
-                "shortDescription":"This is a short description about Nick Eby.",
+                "title":"Lead Developer, Digital Innovation",
+                "shortDescription":"Nick led Guest Mobility development team before recently joining Digital Innovation. He enjoys working on an array of technologies, but building components for his model railroad (with Arduino) might be his favorite.",
                 "twitter":"@nicholasleby",
                 "imageURL":"profiles_neby",
-                "favorite":"Ulta App"
+                "favorite":"Spotify, Instagram"
+                },
+                {
+                "name":"Akash Luthra",
+                "title":"QA Lead, Mobility",
+                "shortDescription":"Akash leads the QA efforts for the Mobility team at Ulta. He also likes to contribute to new innovations in technology.",
+                "imageURL":"profiles_aluthra",
+                "favorite":"Ulta Beauty, Google Home, Ecobee"
                 },
                 {
                 "name":"Robert Figueras",
-                "title":"Sr. Manager, UX",
-                "shortDescription":"This is a short description about Nick Eby.",
+                "title":"Developer, Mobility",
+                "shortDescription":"Robert has been in the field of iOS development for over 6 years. He enjoys spending time with his family in Geneva, learning new technologies, and playing guitar & piano.",
                 "imageURL":"profiles_rfigueras",
-                "favorite":"Ulta App"
+                "favorite":"BobbleShop"
                 },
                 {
-                "name":"Alan Evans",
-                "title":"Lead iOS Developer, Mobility",
-                "shortDescription":"This is a short description about Nick Eby.",
+                "name":"Allan Evans",
+                "title":"Lead Developer, Mobility",
+                "shortDescription":"In his spare time, Allan enjoys working on cars & racing in local events. Vroom, Vroom!",
                 "imageURL":"profiles_aevans",
-                "favorite":"Ulta App"
+                "favorite":"Ulta Beauty"
                 }
                 ]
-}
+		}

@@ -11,7 +11,8 @@ import Contacts
 
 class Marker: MKPointAnnotation
 {
-    enum PinType: Int {
+    enum PinType: Int
+    {
         case ulta
         case lakeview
         case micheleclark
@@ -29,7 +30,8 @@ class Marker: MKPointAnnotation
         return marker
     }
     
-    func mapItem() -> MKMapItem {
+    func mapItem() -> MKMapItem
+    {
         let addressDict = [CNPostalAddressStreetKey: subtitle!]
         let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDict)
         let mapItem = MKMapItem(placemark: placemark)

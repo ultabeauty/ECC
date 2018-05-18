@@ -2,75 +2,93 @@
     "resources":[
                  {
                  "title":"Ulta at a Glance",
-                 "shortDescription":"This is a short description.",
+                 "shortDescription":"Get to know Ulta by reviwiing our quick overview of Ulta Beauty by the numbers.",
                  "source":"Ulta Beauty",
                  "link":"ulta_at_a_glance",
-                 "imageURL":"document",
+                 "imageURL":"resource_pdf",
+                 "color" : "PDF_Color",
                  "type" : 1
                  },
                  {
                  "title":"Work for Ulta Beauty",
-                 "shortDescription":"This is a short description.",
-                 "source":"Apple, Inc.",
+                 "shortDescription":"A digital version of our recruiting trifold – explore what it would be like to work for Ulta Beatuy!",
+                 "source":"Ulta Beauty",
                  "link":"ulta_recrutiing",
-                 "imageURL":"document",
+                 "imageURL":"resource_pdf",
+                 "color" : "PDF_Color",
                  "type" : 1
                  },
                  {
-                 "title":"Ulta App",
-                 "shortDescription":"This is a short description.",
-                 "source":"Apple, Inc.",
-                 "link":"https://www.ulta.com/app/",
-                 "imageURL":"website",
+                 "title":"Ulta Beauty App",
+                 "shortDescription":"All things beauty, all in one place! Download our Ulta Beauty app and explore all that Ulta has to offer.",
+                 "source":"Ulta Beauty",
+                 "link":"https://itunes.apple.com/us/app/ulta-beauty/id561930308?mt=8",
+                 "imageURL":"resource_app",
+                 "color" : "App_Color",
                  "type" : 2
                  },
                  {
                  "title":"ECC Source Code",
                  "shortDescription":"The source code for the ECC code app we built for this event. Feel free to explore!",
-                 "source":"GitHub, Inc",
+                 "source":"GitHub",
                  "link":"https://github.com/ultabeauty/ECC",
-                 "imageURL":"code",
+                 "imageURL":"resource_github",
+                 "color" : "Dark_Grey",
+                 "type" : 2
+                 },
+                 {
+                 "title":"Everyone Can Code",
+                 "shortDescription":"Apple's website centered around giving anyone the tools to learn how to code.",
+                 "source":"Apple, Inc.",
+                 "link":"https://www.apple.com/everyone-can-code/",
+                 "imageURL":"resource_browser",
+                 "color" : "Browser_Color",
                  "type" : 2
                  },
                  {
                  "title":"Swift Playgrounds",
                  "shortDescription":"Swift Playgrounds is a revolutionary app for iPad that makes it fun to learn and experiment with code.",
                  "source":"Apple, Inc.",
-                 "link":"https://www.google.com",
-                 "imageURL":"code",
-                 "type" : 0
+                 "link":"https://itunes.apple.com/us/app/swift-playgrounds/id908519492?mt=8",
+                 "imageURL":"resource_app",
+                 "color" : "App_Color",
+                 "type" : 2
                  },
                  {
                  "title":"Intro to App Development with Swift",
-                 "shortDescription":"This course is designed to help you build a solid foundation in programming fundamentals using Swift as the language.",
+                 "shortDescription":"New to programming and Swift? This course from Apple is designed to help.",
                  "source":"Apple, Inc.",
                  "link":"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=1118575552&mt=11&v0=www-ae-education-everyone-can-code-book-app-development-swift-preview",
-                 "imageURL":"code",
-                 "type" : 0
+                 "imageURL":"resource_book",
+                 "color" : "Book_Color",
+                 "type" : 2
                  },
                  {
                  "title":"Learn to Code 1 & 2",
-                 "shortDescription":"This Teacher Guide is designed to help you bring Swift Playgrounds.",
+                 "shortDescription":"A course from Apple centered around programming fundamentals.",
                  "source":"Apple, Inc.",
-                 "link":"https://www.google.com",
-                 "imageURL":"code",
-                 "type" : 0
+                 "link":"https://itunes.apple.com/us/course/id1153807202?v0=www-us-education-everyone-can-code-course-ltc",
+                 "imageURL":"resource_book",
+                 "color" : "Book_Color",
+                 "type" : 2
                  },
                  {
                  "title":"App Development with Swift",
-                 "shortDescription":"This course is designed to teach you the skills needed to be an app developer capable of bringing your own ideas to life. Whether you’re new to coding or want to expand your skills, by the end of this course you should be able to build a fully functioning app of your own design.",
+                 "shortDescription":"Want to learn how to develop in Swift? Check out Apple's Swift course today.",
                  "source":"Apple, Inc.",
                  "link":"https://itunes.apple.com/book/id1219117996",
-                 "imageURL":"code",
-                 "type" : 0
+                 "imageURL":"resource_book",
+                 "color" : "Book_Color",
+                 "type" : 2
                  },
                  {
                  "title":"Swift",
-                 "shortDescription":"This is a short description.",
+                 "shortDescription":"Apple's website focusing on All things Swift – their powerful, open-source, programming language.",
                  "source":"Apple, Inc.",
-                 "link":"https://www.google.com",
-                 "imageURL":"code",
-                 "type" : 0
+                 "link":"https://www.apple.com/swift/",
+                 "imageURL":"resource_browser",
+                 "color" : "Browser_Color",
+                 "type" : 2
                  }
                  ]
 }

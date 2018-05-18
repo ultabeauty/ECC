@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 class SessionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout
 {
@@ -17,8 +18,6 @@ class SessionViewController: UICollectionViewController, UICollectionViewDelegat
     override func viewDidLoad()
     {
         super.viewDidLoad()
-    
-        self.navigationItem.rightBarButtonItem = nil
         
         initCollectioView()
         initData()//since data is local file, we can instantiate in viewDidLoad
@@ -31,6 +30,7 @@ class SessionViewController: UICollectionViewController, UICollectionViewDelegat
         initOnboarding()
     }
     
+
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -89,45 +89,19 @@ class SessionViewController: UICollectionViewController, UICollectionViewDelegat
     {
         let session = sessions[indexPath.row]
 
-        if session.category == 9
+        if(session.type == 0) //video card
         {
-            guard let cell : SessionCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "BreakCollectionCell", for: indexPath) as? SessionCollectionCell else { return UICollectionViewCell() }
+            guard let cell : SessionCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoCollectionCell", for: indexPath) as? SessionCollectionCell else { return UICollectionViewCell() }
             
-            //Category
-            cell.categoryLabel?.text = session.categoryToDisplayString()
-            
-            //Title
-            cell.titleLabel?.text = session.title
-            
-            //Date
-            cell.dateLabel?.text = session.dateToDisplayString()
+            cell.session = session
             
             return cell
         }
-        else
+        else //session card
         {
             guard let cell : SessionCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SessionCollectionCell", for: indexPath) as? SessionCollectionCell else { return UICollectionViewCell() }
             
-            //Image
-            cell.sessionImageView?.image = UIImage.init(named: sessions[indexPath.row].imageURL!)
-            
-            //Category
-            cell.categoryLabel?.text = session.categoryToDisplayString()
-            
-            //Title
-            cell.titleLabel?.text = session.title
-            
-            //Badge
-            cell.badge?.badgeType = session.category
-            
-            //Date
-            cell.dateLabel?.text = session.dateToDisplayString()
-            
-            //Short Description
-            cell.descriptionLabel?.text = session.shortDescription
-            
-            //Session #
-            cell.sessionViewLabel?.text = String(format: "%.2d", indexPath.row)
+            cell.session = session
             
             return cell
         }
@@ -140,16 +114,42 @@ class SessionViewController: UICollectionViewController, UICollectionViewDelegat
         
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
 
-        if session.category == 9
+        let max_width = collectionView.frame.size.width - layout.sectionInset.left - layout.sectionInset.right
+        
+        if(session.type == 0)
         {
-            return CGSize.init(width: collectionView.frame.size.width - layout.sectionInset.left - layout.sectionInset.right, height: 102)
+            return CGSize.init(width: max_width, height: 210)
         }
         else
-        {
-            return CGSize.init(width: collectionView.frame.size.width - layout.sectionInset.left - layout.sectionInset.right, height: 230)
+        {            
+            return CGSize.init(width: max_width, height: 132)
         }
     }
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        let session = sessions[indexPath.row]
+        
+        let cell = collectionView.cellForItem(at: indexPath)
+        
+        if(session.type == 0)
+        {
+            playVideo(filename: session.videoURL!)
+        }
+        else
+        {
+            if(session.survey != nil)
+            {
+                self.performSegue(withIdentifier: "SurveySegue", sender: cell)
+            }
+            else
+            {
+                self.performSegue(withIdentifier: "DetailSegue", sender: cell)
+            }
+        }
+    }
+    
+    
     
     // MARK: - Navigation
     @IBAction func unwindSegue(segue:UIStoryboardSegue) { }
@@ -176,20 +176,35 @@ class SessionViewController: UICollectionViewController, UICollectionViewDelegat
     
     
     
+    func playVideo(filename:String)
+    {
+        let filename_components = filename.components(separatedBy: ".")
+        let name = filename_components.first
+        let file_extension = filename_components.last
+        
+        let path = Bundle.main.path(forResource: name, ofType: file_extension)
+        let url = NSURL.fileURL(withPath: path!)
+        
+        let player = AVPlayer.init(url: url)
+        let playerController = AVPlayerViewController.init()
+        playerController.player = player
+        
+        present(playerController, animated: true)
+        {
+            player.play()
+        }
+    }
+    
     
     func initOnboarding()
-{
-    if(UserDefaults.standard.string(forKey: "kSchoolSelection") == nil)
     {
-        self.performSegue(withIdentifier: "OnboardSegue", sender: self)
-    }
+        if(UserDefaults.standard.string(forKey: "kSchoolSelection") == nil)
+        {
+            self.performSegue(withIdentifier: "OnboardSegue", sender: self)
+        }
     }
     
-    @IBAction func openOnboarding(_ sender: Any)
-    {
-    self.performSegue(withIdentifier: "OnboardSegue", sender: self)
-    }
-    
+
 
 
 }

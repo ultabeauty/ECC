@@ -24,6 +24,7 @@ class SurveyViewController: UIViewController, WKNavigationDelegate {
 
         //Defaults
         webView.isHidden = true
+        webView.scrollView.isScrollEnabled = false
         completedView.isHidden = true
         progressView.progress = 0
         progressView.isHidden = false
@@ -80,7 +81,7 @@ class SurveyViewController: UIViewController, WKNavigationDelegate {
     {
         progressView.isHidden = true
         
-        insertContentsOfCSSFile(into: webView)
+        //insertContentsOfCSSFile(into: webView)
     }
     
     
@@ -88,7 +89,8 @@ class SurveyViewController: UIViewController, WKNavigationDelegate {
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)
     {
-        if keyPath == "estimatedProgress" {
+        if keyPath == "estimatedProgress"
+        {
             progressView.progress = Float(webView.estimatedProgress)
         }
     }
@@ -105,4 +107,14 @@ class SurveyViewController: UIViewController, WKNavigationDelegate {
         
         webView.evaluateJavaScript(js, completionHandler: nil)
     }
+    
+    
+    
+    @IBAction func done(_ sender:Any)
+    {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
 }

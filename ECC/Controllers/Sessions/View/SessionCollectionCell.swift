@@ -16,12 +16,8 @@ class SessionCollectionCell: UICollectionViewCell
     @IBOutlet weak var sessionImageView: UIImageView!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var badge: SessionBadgeView!
     @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var authorLabel: UILabel!
-    @IBOutlet weak var sessionView: UIView!
-    @IBOutlet weak var sessionViewLabel: UILabel!
+    @IBOutlet var sessionImageViewWidth: NSLayoutConstraint!
 
     
     override func awakeFromNib()
@@ -29,9 +25,7 @@ class SessionCollectionCell: UICollectionViewCell
         super.awakeFromNib()
 
         //Create Circle
-        //backgroundColor and clipsToBounds set in IB
-        sessionView?.layer.cornerRadius = sessionView.frame.size.height / 2
-
+        sessionImageView?.layer.cornerRadius = sessionImageView.frame.size.height / 2
     }
     
     @IBInspectable var cornerRadius: CGFloat = 0
@@ -44,8 +38,70 @@ class SessionCollectionCell: UICollectionViewCell
             layer.shadowOffset = CGSize.init(width: 0, height: 16)
             layer.shadowRadius = 10.0
             layer.shadowOpacity = 1.0
+            layer.borderColor = UIColor.init(white: 0.92, alpha: 1.0).cgColor
+            layer.borderWidth = 1.0
         }
     }
+    
+    
+    
+    
+    var session: Session?
+    {
+        didSet
+        {
+            if(session?.type == 0) //video card
+            {
+                //Image
+                sessionImageView?.image = UIImage.init(named: (session?.smallImageURL!)!)
+            }
+            else
+            {
+                //Image
+                if(session?.smallImageURL != nil)
+                {
+                    sessionImageViewWidth?.constant = 96
+                    sessionImageView?.image = UIImage.init(named: (session?.smallImageURL!)!)
+                }
+                else
+                {
+                    sessionImageViewWidth?.constant = 0
+                    sessionImageView?.image = nil
+                }
+                
+                //Category
+                categoryLabel?.text = session?.category
+                
+                //Title
+                titleLabel?.text = session?.title
+                
+                //Date
+                if(session?.start_timestamp != nil)
+                {
+                    dateLabel?.text = session?.dateToDisplayString()
+                }
+                else
+                {
+                    dateLabel?.text = session?.altText
+                }
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     override var isHighlighted: Bool

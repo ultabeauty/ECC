@@ -97,24 +97,9 @@ class ProfilesViewController: UIViewController, UITableViewDelegate, UITableView
     {
         guard let cell : ProfileCell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell", for: indexPath) as? ProfileCell else { return UITableViewCell() }
 
-        //Image
-        cell.profileImageView?.image = UIImage.init(named: profiles[indexPath.row].imageURL!)
-        
-        //Name
-        cell.nameLabel?.text = profiles[indexPath.row].name
-        //cell.nameLabel?.textColor = self.navigationController?.navigationBar.barTintColor
+        let profile = profiles[indexPath.row]
 
-        //Twitter (Optional)
-        cell.twitterLabel?.text = profiles[indexPath.row].twitter
-        
-        //Title
-        cell.titleLabel?.text = profiles[indexPath.row].title
-        
-        //Short Description
-        cell.descriptionLabel?.text = profiles[indexPath.row].shortDescription
-        
-        //Favorite App
-        cell.favoriteAppLabel?.text = profiles[indexPath.row].favorite
+        cell.profile = profile
         
         return cell
     }

@@ -12,14 +12,15 @@
 		8509FAD9208E73B500F4CD5E /* LakeView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8509FAD7208E73B500F4CD5E /* LakeView@2x.png */; };
 		8509FADC208E73C400F4CD5E /* MicheleClark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8509FADA208E73C400F4CD5E /* MicheleClark@2x.png */; };
 		8509FADD208E73C400F4CD5E /* MicheleClark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8509FADB208E73C400F4CD5E /* MicheleClark@3x.png */; };
-		8509FAE1208F8E7500F4CD5E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509FAE0208F8E7500F4CD5E /* TabBarController.swift */; };
 		8509FAE4208F980B00F4CD5E /* sessions.json in Resources */ = {isa = PBXBuildFile; fileRef = 8509FAE3208F980B00F4CD5E /* sessions.json */; };
 		8509FAEA2098BE4F00F4CD5E /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509FAE92098BE4F00F4CD5E /* SessionViewController.swift */; };
 		8509FAEC2098BF7A00F4CD5E /* SessionCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509FAEB2098BF7A00F4CD5E /* SessionCollectionCell.swift */; };
 		8509FAF02098C43C00F4CD5E /* SessionClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509FAEF2098C43C00F4CD5E /* SessionClipView.swift */; };
 		857FDF0620A098E800A3E4F8 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857FDF0520A098E800A3E4F8 /* IntroViewController.swift */; };
 		857FDF0820A0D2A500A3E4F8 /* UIStackView+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857FDF0720A0D2A500A3E4F8 /* UIStackView+BackgroundColor.swift */; };
-		A5579B4F2075BC4D008D0D52 /* SessionBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5579B4E2075BC4D008D0D52 /* SessionBadgeView.swift */; };
+		85DBBF8D20A4A2AE00FE2831 /* IntroVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBBF8C20A4A2AE00FE2831 /* IntroVideoViewController.swift */; };
+		85DBBF8F20A4A37D00FE2831 /* video.html in Resources */ = {isa = PBXBuildFile; fileRef = 85DBBF8E20A4A37C00FE2831 /* video.html */; };
+		85DBBF9520ACCCEB00FE2831 /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = 85DBBF9420ACCCEB00FE2831 /* video.mov */; };
 		A55AD822206B2E7D002562DB /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AD821206B2E7D002562DB /* Profile.swift */; };
 		A55AD824206B2E86002562DB /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AD823206B2E86002562DB /* Resource.swift */; };
 		A55AD826206B2F3B002562DB /* resources.json in Resources */ = {isa = PBXBuildFile; fileRef = A55AD825206B2F3B002562DB /* resources.json */; };
@@ -39,7 +40,6 @@
 		A59E1AEA20672F0D00C0DF3A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E1AE920672F0D00C0DF3A /* MapViewController.swift */; };
 		A59E1AED20672F2500C0DF3A /* SessionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E1AEC20672F2500C0DF3A /* SessionDetailViewController.swift */; };
 		A59E1AF2206742E100C0DF3A /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E1AF1206742E100C0DF3A /* Session.swift */; };
-		A59E1AF4206742FB00C0DF3A /* SessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E1AF3206742FB00C0DF3A /* SessionCell.swift */; };
 		A5B9318B206C7B4B00693317 /* ResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9318A206C7B4B00693317 /* ResourceCell.swift */; };
 		A5E9973020902313007B9CC4 /* SchoolSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E9972F20902313007B9CC4 /* SchoolSelectionView.swift */; };
 /* End PBXBuildFile section */
@@ -50,14 +50,15 @@
 		8509FAD7208E73B500F4CD5E /* LakeView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LakeView@2x.png"; sourceTree = "<group>"; };
 		8509FADA208E73C400F4CD5E /* MicheleClark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MicheleClark@2x.png"; sourceTree = "<group>"; };
 		8509FADB208E73C400F4CD5E /* MicheleClark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MicheleClark@3x.png"; sourceTree = "<group>"; };
-		8509FAE0208F8E7500F4CD5E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8509FAE3208F980B00F4CD5E /* sessions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sessions.json; sourceTree = "<group>"; };
 		8509FAE92098BE4F00F4CD5E /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		8509FAEB2098BF7A00F4CD5E /* SessionCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionCollectionCell.swift; sourceTree = "<group>"; };
 		8509FAEF2098C43C00F4CD5E /* SessionClipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionClipView.swift; sourceTree = "<group>"; };
 		857FDF0520A098E800A3E4F8 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		857FDF0720A0D2A500A3E4F8 /* UIStackView+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+BackgroundColor.swift"; sourceTree = "<group>"; };
-		A5579B4E2075BC4D008D0D52 /* SessionBadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionBadgeView.swift; sourceTree = "<group>"; };
+		85DBBF8C20A4A2AE00FE2831 /* IntroVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVideoViewController.swift; sourceTree = "<group>"; };
+		85DBBF8E20A4A37C00FE2831 /* video.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = video.html; sourceTree = "<group>"; };
+		85DBBF9420ACCCEB00FE2831 /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video.mov; sourceTree = "<group>"; };
 		A55AD821206B2E7D002562DB /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		A55AD823206B2E86002562DB /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		A55AD825206B2F3B002562DB /* resources.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resources.json; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		A59E1AE920672F0D00C0DF3A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A59E1AEC20672F2500C0DF3A /* SessionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailViewController.swift; sourceTree = "<group>"; };
 		A59E1AF1206742E100C0DF3A /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		A59E1AF3206742FB00C0DF3A /* SessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCell.swift; sourceTree = "<group>"; };
 		A5B9318A206C7B4B00693317 /* ResourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceCell.swift; sourceTree = "<group>"; };
 		A5E9972F20902313007B9CC4 /* SchoolSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				A5E997312090231B007B9CC4 /* View */,
+				85DBBF8C20A4A2AE00FE2831 /* IntroVideoViewController.swift */,
 				8509FA472089347400F4CD5E /* OnboardingViewController.swift */,
 				857FDF0520A098E800A3E4F8 /* IntroViewController.swift */,
 			);
@@ -132,12 +133,20 @@
 			path = LakeView;
 			sourceTree = "<group>";
 		};
-		8509FAE2208F8E7B00F4CD5E /* Tab Bar */ = {
+		85DBBF9220ACCCDA00FE2831 /* HTML */ = {
 			isa = PBXGroup;
 			children = (
-				8509FAE0208F8E7500F4CD5E /* TabBarController.swift */,
+				85DBBF8E20A4A37C00FE2831 /* video.html */,
 			);
-			path = "Tab Bar";
+			path = HTML;
+			sourceTree = "<group>";
+		};
+		85DBBF9320ACCCDF00FE2831 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				85DBBF9420ACCCEB00FE2831 /* video.mov */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 		A55AD81D206B2E4F002562DB /* Model */ = {
@@ -235,7 +244,6 @@
 		A59E1AD820672E2700C0DF3A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8509FAE2208F8E7B00F4CD5E /* Tab Bar */,
 				8509FA462089344D00F4CD5E /* Onboarding */,
 				A59E1ADF20672E9500C0DF3A /* Sessions */,
 				A59E1AE420672ED200C0DF3A /* Profiles */,
@@ -258,6 +266,8 @@
 		A59E1ADB20672E5300C0DF3A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				85DBBF9320ACCCDF00FE2831 /* Videos */,
+				85DBBF9220ACCCDA00FE2831 /* HTML */,
 				A583542A209B5C2600BF284D /* PDFs */,
 				8509FA5B208E72F600F4CD5E /* Alternate Icons */,
 				A59E1ADE20672E7C00C0DF3A /* Mock Web Service Responses */,
@@ -271,8 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				8509FAE3208F980B00F4CD5E /* sessions.json */,
-				A55AD825206B2F3B002562DB /* resources.json */,
 				A55AD82B206B2F6C002562DB /* profiles.json */,
+				A55AD825206B2F3B002562DB /* resources.json */,
 			);
 			path = "Mock Web Service Responses";
 			sourceTree = "<group>";
@@ -340,8 +350,6 @@
 			children = (
 				8509FAEF2098C43C00F4CD5E /* SessionClipView.swift */,
 				8509FAEB2098BF7A00F4CD5E /* SessionCollectionCell.swift */,
-				A59E1AF3206742FB00C0DF3A /* SessionCell.swift */,
-				A5579B4E2075BC4D008D0D52 /* SessionBadgeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -429,6 +437,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DBBF9520ACCCEB00FE2831 /* video.mov in Resources */,
 				8509FADD208E73C400F4CD5E /* MicheleClark@3x.png in Resources */,
 				A59E1AD120672E1D00C0DF3A /* LaunchScreen.storyboard in Resources */,
 				8509FADC208E73C400F4CD5E /* MicheleClark@2x.png in Resources */,
@@ -441,6 +450,7 @@
 				8509FAD9208E73B500F4CD5E /* LakeView@2x.png in Resources */,
 				A5835426209B5B3900BF284D /* ulta_at_a_glance.pdf in Resources */,
 				A59E1ACC20672E1D00C0DF3A /* Main.storyboard in Resources */,
+				85DBBF8F20A4A37D00FE2831 /* video.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,14 +462,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				857FDF0620A098E800A3E4F8 /* IntroViewController.swift in Sources */,
-				A59E1AF4206742FB00C0DF3A /* SessionCell.swift in Sources */,
 				A5E9973020902313007B9CC4 /* SchoolSelectionView.swift in Sources */,
+				85DBBF8D20A4A2AE00FE2831 /* IntroVideoViewController.swift in Sources */,
 				A55AD822206B2E7D002562DB /* Profile.swift in Sources */,
 				A59E1AF2206742E100C0DF3A /* Session.swift in Sources */,
-				A5579B4F2075BC4D008D0D52 /* SessionBadgeView.swift in Sources */,
 				A55AD824206B2E86002562DB /* Resource.swift in Sources */,
 				A5B9318B206C7B4B00693317 /* ResourceCell.swift in Sources */,
-				8509FAE1208F8E7500F4CD5E /* TabBarController.swift in Sources */,
 				A59E1AC520672E1D00C0DF3A /* AppDelegate.swift in Sources */,
 				8509FAF02098C43C00F4CD5E /* SessionClipView.swift in Sources */,
 				A59E1AE620672EF600C0DF3A /* ProfilesViewController.swift in Sources */,

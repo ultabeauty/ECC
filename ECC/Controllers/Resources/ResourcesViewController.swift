@@ -9,7 +9,7 @@
 import UIKit
 import SafariServices
 
-class ResourcesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIDocumentInteractionControllerDelegate
+class ResourcesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SFSafariViewControllerDelegate, UIDocumentInteractionControllerDelegate
 {
     // MARK: - Properties
     var resources = [Resource]()
@@ -19,7 +19,6 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
 
 
     // MARK: - Lifecycle
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -77,63 +76,43 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK: - TableView
     func initTableView()
     {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+
     }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int
     {
         return 1
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return resources.count
     }
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return UITableViewAutomaticDimension
     }
     
+    
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return 100.0
     }
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        guard let cell : ResourceCell = tableView.dequeueReusableCell(withIdentifier: "ResourceCell", for: indexPath) as? ResourceCell else { return UITableViewCell() }
-        
-        //Defaults
-        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
-        
-        //Image
-        cell.resourceImageView?.image = UIImage.init(named: resources[indexPath.row].imageURL)
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ResourceCell.self)) as! ResourceCell
 
-        //Title
-        cell.titleLabel?.text = resources[indexPath.row].title
-        //cell.titleLabel?.textColor = self.navigationController?.navigationBar.barTintColor
-
-        //Source
-        cell.sourceLabel?.text = "Source: " + resources[indexPath.row].source
+        let resource = resources[indexPath.row]
         
-        //Short Description
-        cell.descriptionLabel?.text = resources[indexPath.row].shortDescription
+        cell.resource = resource
         
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
-    {
-        return true
-    }
-    
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
-    {
-        let share: UITableViewRowAction = UITableViewRowAction.init(style: UITableViewRowActionStyle.default, title: "Share", handler:{action, indexpath in
-        })
-        
-        return [share]
     }
     
     
@@ -154,6 +133,7 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
             if let url = URL(string: resources[indexPath.row].link)
             {
                 let vc = SFSafariViewController.init(url: url)
+                vc.delegate = self
                 vc.preferredBarTintColor = self.navigationController?.navigationBar.barTintColor
                 vc.preferredControlTintColor = self.navigationController?.navigationBar.tintColor
                 
@@ -171,9 +151,28 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     
+    // MARK: - SFSafariViewControllerDelegate
+
+    func safariViewController(_ controller: SFSafariViewController, initialLoadDidRedirectTo URL: URL)
+    {
+        print("svc did redirect %@", URL)
+    }
     
-    //
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController)
+    {
+        print("svc did finish")
+
+    }
     
+    func safariViewController(_ controller: SFSafariViewController, didCompleteInitialLoad didLoadSuccessfully: Bool)
+    {
+        print("svc did complete IL")
+    }
+    
+    
+    
+    
+    // MARK: - UIDocumentInteractionController
     func previewURL(resource:Resource)
     {
         let resource_url = Bundle.main.url(forResource: resource.link, withExtension: "pdf")
@@ -183,13 +182,13 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
         documentInteractionController.presentPreview(animated: true)
     }
     
+    
+    // MARK: - UIDocumentInteractionControllerDelegate
     func documentInteractionControllerViewControllerForPreview(_ controller: UIDocumentInteractionController) -> UIViewController {
         return self.navigationController!
     }
 
     
-    
-
     
     
     // MARK: - Navigation

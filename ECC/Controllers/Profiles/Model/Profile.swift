@@ -24,8 +24,8 @@ class Profiles: Codable
 class Profile: Codable
 {
     // MARK: - Properties
-    let name: String
-    let title: String
+    let name: String?
+    let title: String?
     let shortDescription: String?
     let twitter: String?
     let imageURL: String?

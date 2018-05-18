@@ -15,6 +15,8 @@ class ProfileCell: UITableViewCell
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet var twitterViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var twitterIcon: UIImageView!
     @IBOutlet weak var twitterLabel: UILabel!
     @IBOutlet weak var favoriteAppLabel: UILabel!
 
@@ -22,16 +24,34 @@ class ProfileCell: UITableViewCell
     {
         super.awakeFromNib()
 
-        //Create Circle
-        //backgroundColor and clipsToBounds set in IB
-        profileImageView.layer.cornerRadius = profileImageView.frame.size.height / 2
+        //Defaults
+        profileImageView?.layer.cornerRadius = profileImageView.frame.size.height / 2
+        twitterIcon?.tintColor = UIColor(red:0.16, green:0.66, blue:0.88, alpha:1.0)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool)
+    
+    var profile: Profile?
     {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        didSet
+        {
+            //Image
+            profileImageView?.image = UIImage.init(named: (profile?.imageURL!)!)
+            
+            //Name
+            nameLabel?.text = profile?.name
+            
+            //Twitter (Optional)
+            twitterViewHeightConstraint.constant = profile?.twitter == nil ? 0 : 22
+            twitterLabel?.text = profile?.twitter
+            
+            //Title
+            titleLabel?.text = profile?.title
+            
+            //Short Description
+            descriptionLabel?.text = profile?.shortDescription
+            
+            //Favorite App
+            favoriteAppLabel?.text = "Favorite App: " +  (profile?.favorite!)!
+        }
     }
 
 }

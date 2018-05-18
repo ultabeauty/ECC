@@ -25,10 +25,9 @@ class MarkerView: MKMarkerAnnotationView
                 if marker.type == .ulta
                 {
                     glyphText = "Ulta"
-                    markerTintColor = UIColor.orange
+                    markerTintColor = UIColor(named: "Primary_Color")
                     canShowCallout = true
                     rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-                    //glyphImage = UIImage(named: "unicycle")
                 }
                 else if(marker.type == .lakeview)
                 {

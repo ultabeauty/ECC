@@ -17,11 +17,8 @@ class OnboardingViewController: UIViewController, SchoolSelectionViewDelegate
     {
         super.viewDidLoad()
         
-        //Override the Global colors
-        navigationController?.navigationBar.barTintColor = UIColor.white
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.init(named: "Dark_Color") ?? UIColor.black]
-        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.init(named: "Dark_Color") ?? UIColor.black]
-        navigationController?.navigationBar.barStyle = UIBarStyle.default
+        //Navigation
+        self.navigationItem.hidesBackButton = true
         
         initSchools()
     }
@@ -60,12 +57,12 @@ class OnboardingViewController: UIViewController, SchoolSelectionViewDelegate
     
     func didSelectSchool(school: Int)
     {
+        
         if(school == 0)
         {
             print("school 1")
             micheleClark.checkMark.isHidden = true
 
-            UINavigationBar.appearance().barTintColor = UIColor.init(named: "Lake_View")
             UITabBar.appearance().tintColor = UIColor.init(named: "Lake_View")
 
             UserDefaults.standard.set("LakeView", forKey: "kSchoolSelection")
@@ -75,18 +72,11 @@ class OnboardingViewController: UIViewController, SchoolSelectionViewDelegate
             print("school 2")
             lakeView.checkMark.isHidden = true
 
-            UINavigationBar.appearance().barTintColor = UIColor.init(named: "Michele_Clark")
             UITabBar.appearance().tintColor = UIColor.init(named: "Michele_Clark")
             
             UserDefaults.standard.set("MicheleClark", forKey: "kSchoolSelection")
         }
-        
-        //Global
-        UINavigationBar.appearance().barStyle = .black
-        UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-        
+  
         changeIcon(school: school)
     }
     
@@ -111,11 +101,17 @@ class OnboardingViewController: UIViewController, SchoolSelectionViewDelegate
                     print("Done!")
                 }
                 
-                //self.dismiss(animated: true, completion: nil)
-                
-                self.performSegue(withIdentifier: "IntroSegue", sender: self)
+                self.dismiss(animated: true, completion: nil)
             }
         }
+    }
+    
+    
+    @IBAction func skip(_ sender:Any)
+    {
+        UserDefaults.standard.set("Other", forKey: "kSchoolSelection")
+
+        self.dismiss(animated: true, completion: nil)
     }
     
     

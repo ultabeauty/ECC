@@ -19,16 +19,43 @@ class ResourceCell: UITableViewCell
     override func awakeFromNib()
     {
         super.awakeFromNib()
-        
-        // Initialization code
-        resourceImageView.layer.cornerRadius = resourceImageView.frame.size.height / 2
-    }
 
-    override func setSelected(_ selected: Bool, animated: Bool)
+        //Defaults
+        accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+        resourceImageView?.tintColor = UIColor.white
+        resourceImageView?.layer.cornerRadius = resourceImageView.frame.size.height / 2
+    }
+    
+    var resource: Resource?
     {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        didSet
+        {
+            //Image
+            resourceImageView?.backgroundColor = UIColor.init(named: (resource?.color)!)
+            resourceImageView?.image = UIImage.init(named: (resource?.imageURL)!)
+            
+            //Title
+            titleLabel?.text = resource?.title
+            
+            //Source
+            sourceLabel?.text = "Source: " + (resource?.source)!
+            
+            //Short Description
+            descriptionLabel?.text = resource?.shortDescription
+        }
     }
-
+    
+    override func setHighlighted(_ highlighted: Bool, animated: Bool)
+    {
+        super.setHighlighted(highlighted, animated: animated)
+        
+        if highlighted
+        {
+            resourceImageView?.backgroundColor = UIColor.darkGray
+        }
+        else
+        {
+            resourceImageView?.backgroundColor = UIColor.init(named: (resource?.color)!)
+        }
+    }
 }

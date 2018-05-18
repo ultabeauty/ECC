@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum CardType: Int
+{
+    case video
+    case session
+}
+
 class Sessions: Codable
 {
     // MARK: - Properties
@@ -23,26 +29,36 @@ class Sessions: Codable
 class Session: Codable
 {
     // MARK: - Properties
-    let title: String
-    let timestamp: String
-    let category: Int
-    let shortDescription: String
-    let longDescription: String
-    let authors: [Profile]
-    let imageURL: String?
+    let type: Int?
+    let title: String?
+    let start_timestamp: String?
+    let end_timestamp: String?
+    let category: String?
+    let longDescription: String?
+    let authors: [Profile]?
+    let videoURL : String?
+    let smallImageURL: String?
+    let largeImageURL: String?
     let takeaways: [String]?
+    let altText: String?
+    let survey: Bool?
     
     // MARK: - Initializers
-    init(title: String, timestamp: String, category: Int, shortDescription: String, longDescription: String, authors: [Profile], imageURL:String, takeaways:[String])
+    init(type: Int, title: String, start_timestamp: String, end_timestamp: String, category: String, longDescription: String, authors: [Profile], smallImageURL:String, largeImageURL:String, videoURL:String, takeaways:[String], altText:String, survey:Bool)
     {
+        self.type = type
         self.title = title
-        self.timestamp = timestamp
+        self.start_timestamp = start_timestamp
+        self.end_timestamp = end_timestamp
         self.category = category
-        self.shortDescription = shortDescription
         self.longDescription = longDescription
         self.authors = authors
-        self.imageURL = imageURL
+        self.smallImageURL = smallImageURL
+        self.largeImageURL = largeImageURL
+        self.videoURL = videoURL
         self.takeaways = takeaways
+        self.altText = altText
+        self.survey = survey
     }
     
     public func dateToDisplayString() -> String
@@ -53,79 +69,16 @@ class Session: Codable
         dateFormatterGet.dateFormat = "yyyy-MM-dd'T'HH:mm:ssXXXXX"
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "h:mm a"
-        
-        let date: Date? = dateFormatterGet.date(from: timestamp)
-        
-        return dateFormatter.string(from: date!)
+        dateFormatter.dateFormat = "h:mma"
+
+        let start_date: Date? = dateFormatterGet.date(from: start_timestamp!)
+        let end_date: Date? = dateFormatterGet.date(from: end_timestamp!)
+
+        let start_formatter =  dateFormatter.string(from: start_date!)
+        let end_formatter =  dateFormatter.string(from: end_date!)
+
+        return start_formatter + " - " + end_formatter
     }
-    
-    func authorsToDisplayString() -> String
-    {
-        if(self.authors.count > 0)
-        {
-            var names = "Speakers: "
-            
-            var count = 0
-            
-            for author in self.authors
-            {
-                names += author.name
-                
-                count += 1
-                
-                if(count < self.authors.count)
-                {
-                    names += ", "
-                }
-            }
-            
-            return names
-        }
-        else
-        {
-            return ""
-        }
-    }
-    
-    
-    func categoryToDisplayString() -> String
-    {
-        if(self.category == 0)
-        {
-            return "General"
-        }
-        else if(self.category == 1)
-        {
-            return "Business"
-        }
-        else if(self.category == 2)
-        {
-            return "UX"
-        }
-        else if(self.category == 3)
-        {
-            return "UI"
-        }
-        else if(self.category == 4)
-        {
-            return "QA"
-        }
-        else if(self.category == 5)
-        {
-            return "Dev"
-        }
-        else if(self.category == 9)
-        {
-            return "Break"
-        }
-        return "General"
-    }
-    
-    
-    
-    
-    
-    
+
 }
 

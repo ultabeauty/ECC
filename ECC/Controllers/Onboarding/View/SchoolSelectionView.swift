@@ -37,6 +37,8 @@ class SchoolSelectionView: UIView
             layer.shadowOffset = CGSize.init(width: 0, height: 16)
             layer.shadowRadius = 10.0
             layer.shadowOpacity = 1.0
+            layer.borderColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0).cgColor
+            layer.borderWidth = 1.0
         }
     }
     
@@ -65,6 +67,7 @@ class SchoolSelectionView: UIView
         delegate?.didSelectSchool(school: self.tag)
     }
     
+    
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         checkMark?.isHidden = true
@@ -76,10 +79,6 @@ class SchoolSelectionView: UIView
             // ....
         })
     }
-    
-    
-    
-    
 }
 protocol SchoolSelectionViewDelegate: AnyObject
 {

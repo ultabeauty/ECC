@@ -11,13 +11,21 @@ import MapKit
 
 class MapViewController: UIViewController, MKMapViewDelegate
 {
+    // MARK: - Properties
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var locationImageView: UIImageView!
+    
     var firstLoad : Bool = true
 
+    
+    // MARK: - Lifecycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
+        //Defaults
+        locationImageView?.layer.cornerRadius = locationImageView.frame.size.width / 2
+        
         registerAnnotationViewClasses()
         preloadMap()
     }
@@ -29,17 +37,7 @@ class MapViewController: UIViewController, MKMapViewDelegate
         loadDataForMapRegionAndBikes()
     }
     
-    
-    func mapViewDidFinishLoadingMap(_ mapView: MKMapView)
-    {
-        print("mapViewDidFinishLoadingMap")
-    }
-    
-    func mapViewDidFinishRenderingMap(_ mapView: MKMapView, fullyRendered: Bool)
-    {
-        print("mapViewDidFinishRenderingMap")
 
-    }
     
     
     
@@ -52,16 +50,13 @@ class MapViewController: UIViewController, MKMapViewDelegate
         mapView.setRegion(region, animated: false)
     }
     
-    @IBAction func log(_ sender: Any)
-    {
-        print(mapView.region, mapView)
-    }
 
     
     func registerAnnotationViewClasses()
     {
         mapView.register(MarkerView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
     }
+    
     
     func loadDataForMapRegionAndBikes()
     {
@@ -76,19 +71,20 @@ class MapViewController: UIViewController, MKMapViewDelegate
             
             if(school == "LakeView")
             {
-                let annotation = Marker.markers(lat: 41.95466, lng: -87.66905, title: "Lake View", subtitle: "120 S. Riverside Plaza\nChicago, IL 60606", type: 1)
+                let annotation = Marker.markers(lat: 41.95466, lng: -87.66905, title: "Lake View", subtitle: "4015 North Ashland Ave.\nChicago, IL 60613", type: 1)
                 mapView.addAnnotation(annotation)
 
             }
-            else
+            else if(school == "MicheleClark")
             {
-                let annotation = Marker.markers(lat: 41.87297, lng: -87.75199, title: "Michele Clark", subtitle: "120 S. Riverside Plaza\nChicago, IL 60606", type: 2)
+                let annotation = Marker.markers(lat: 41.87297, lng: -87.75199, title: "Michele Clark", subtitle: "5101 West Harrison St.\nChicago, IL 60644", type: 2)
                 mapView.addAnnotation(annotation)
             }
         }
         
         zoomMapaFitAnnotations()
     }
+    
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
     {
@@ -132,48 +128,43 @@ class MapViewController: UIViewController, MKMapViewDelegate
     }
     
     
-    
-    
-    
-    
-    
     func zoomMapaFitAnnotations()
     {
-        
-        var zoomRect = MKMapRectNull
-        for annotation in self.mapView.annotations
+        if(self.mapView.annotations.count > 1)
         {
-            let annotationPoint = MKMapPointForCoordinate(annotation.coordinate)
-            
-            let pointRect = MKMapRectMake(annotationPoint.x, annotationPoint.y, 0, 0)
-            
-            if (MKMapRectIsNull(zoomRect))
+            var zoomRect = MKMapRectNull
+            for annotation in self.mapView.annotations
             {
-                zoomRect = pointRect
+                let annotationPoint = MKMapPointForCoordinate(annotation.coordinate)
+                
+                let pointRect = MKMapRectMake(annotationPoint.x, annotationPoint.y, 0, 0)
+                
+                if (MKMapRectIsNull(zoomRect))
+                {
+                    zoomRect = pointRect
+                }
+                else
+                {
+                    zoomRect = MKMapRectUnion(zoomRect, pointRect)
+                }
             }
-            else
-            {
-                zoomRect = MKMapRectUnion(zoomRect, pointRect)
-            }
+            self.mapView.setVisibleMapRect(zoomRect, edgePadding: UIEdgeInsetsMake(100, 50, 100, 50), animated: true)
         }
-        self.mapView.setVisibleMapRect(zoomRect, edgePadding: UIEdgeInsetsMake(50, 50, 50, 50), animated: true)
+        else
+        {
+            let center = CLLocationCoordinate2D(latitude: 41.8803211503044, longitude: -87.6388910783805)
+            let viewRegion = MKCoordinateRegionMakeWithDistance(center, 200, 200)
+            mapView.setRegion(viewRegion, animated: false)
+        }
         
     }
     
     
-    override func didReceiveMemoryWarning() {
+    
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

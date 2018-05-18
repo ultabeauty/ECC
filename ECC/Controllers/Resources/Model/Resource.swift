@@ -29,9 +29,10 @@ class Resource: Codable
     let source: String
     let imageURL: String
     let type : Int
+    let color : String
     
     // MARK: - Initializers
-    init(title: String, shortDescription: String, link: String, source: String, imageURL:String, type:Int)
+    init(title: String, shortDescription: String, link: String, source: String, imageURL:String, type:Int, color:String)
     {
         self.title = title
         self.shortDescription = shortDescription
@@ -39,5 +40,10 @@ class Resource: Codable
         self.source = source
         self.imageURL = imageURL
         self.type = type
+        self.color = color
     }
 }
+
+
+
+

@@ -14,8 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
-    {
-        //Check if a school was selected for themeing
+    {        
         if(UserDefaults.standard.string(forKey: "kSchoolSelection") != nil)
         {
             let school = UserDefaults.standard.string(forKey: "kSchoolSelection")
@@ -24,31 +23,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate
             {
                 let lake_view = UIColor.init(named: "Lake_View") ?? UIColor.red
 
-                UINavigationBar.appearance().barTintColor = lake_view
                 UITabBar.appearance().tintColor = lake_view
             }
-            else
+            else if(school == "MicheleClark")
             {
                 let michele_clark = UIColor.init(named: "Michele_Clark") ?? UIColor.yellow
 
-                UINavigationBar.appearance().barTintColor = michele_clark
                 UITabBar.appearance().tintColor = michele_clark
             }
-            
-            //Common
-            UINavigationBar.appearance().barStyle = .black
-            UINavigationBar.appearance().tintColor = UIColor.white
-            UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-            UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+            else
+            {
+                
+            }
         }
         else
         {
             let dark_grey = UIColor.init(named: "Dark_Grey") ?? UIColor.darkGray
-                
             UITabBar.appearance().tintColor = dark_grey
-            UINavigationBar.appearance().tintColor = dark_grey
-            UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: dark_grey]
-            UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: dark_grey]
         }
 
         return true
