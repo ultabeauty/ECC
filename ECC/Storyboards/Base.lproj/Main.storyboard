@@ -884,7 +884,7 @@
                                                         <rect key="frame" x="16" y="121.00000000000006" width="311" height="89.666666666666686"/>
                                                         <string key="text">We look forward to seeing everyone for a day full of code! 
 
-Upon arrival, the Ulta team will asist you in navigating up to your office on the 15th floor.</string>
+Upon arrival, the Ulta team will assist you in navigating up to our office on the 15th floor.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Medium Grey"/>
                                                         <nil key="highlightedColor"/>
@@ -1061,6 +1061,11 @@ Title 2</string>
                                                 <constraint firstItem="AsI-bg-wIO" firstAttribute="leading" secondItem="KBe-Td-pST" secondAttribute="trailing" id="l0h-fZ-xZf"/>
                                                 <constraint firstItem="KBe-Td-pST" firstAttribute="leading" secondItem="c1g-i8-D1T" secondAttribute="leading" id="wZx-6x-cae"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
                                 </view>
@@ -1101,7 +1106,7 @@ Title 2</string>
                                                         <constraint firstAttribute="height" constant="210" id="JM2-9c-aIb"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playhead" translatesAutoresizingMaskIntoConstraints="NO" id="wc2-Cg-7da">
+                                                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playhead" translatesAutoresizingMaskIntoConstraints="NO" id="wc2-Cg-7da">
                                                     <rect key="frame" x="150" y="146" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="Onf-kU-0H3"/>

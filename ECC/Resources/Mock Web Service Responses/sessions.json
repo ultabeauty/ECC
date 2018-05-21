@@ -179,7 +179,7 @@
                 "type":1,
                 "title":"Lunch & Panel Discussion",
                 "start_timestamp":"2018-05-22T12:00:00-05:00",
-                "end_timestamp":"2018-05-22T12:15:00-05:00",
+                "end_timestamp":"2018-05-22T12:30:00-05:00",
                 "category":"1A Lunch",
                 "smallImageURL":"banner_pizza",
                 "largeImageURL":"banner_lunch_large",
@@ -206,8 +206,8 @@
                 {
                 "type":1,
                 "title":"Quality Assurance",
-                "start_timestamp":"2018-05-22T12:15:00-05:00",
-                "end_timestamp":"2018-05-22T12:30:00-05:00",
+                "start_timestamp":"2018-05-22T12:30:00-05:00",
+                "end_timestamp":"2018-05-22T12:45:00-05:00",
                 "category":"Business 102",
                 "longDescription":"Successful testing is a key step to a successful app release and the final safeguard between your app and the end user.",
                 "takeaways":[
@@ -250,7 +250,7 @@
                 "start_timestamp":"2018-05-22T13:00:00-05:00",
                 "end_timestamp":"2018-05-22T13:15:00-05:00",
                 "category":"Dev 103",
-                "longDescription":"We'll show you one of the final steps in the app development lifecycle by walking you through iTunes conenct and what it takes to get your app there.",
+                "longDescription":"We'll show you one of the final steps in the app development lifecycle by walking you through iTunes connect and what it takes to get your app there.",
                 "takeaways":[
                              "Make sure your metadata and screenshots are ready prior to submitting to review",
                              "Take advantage of Phased releases"
