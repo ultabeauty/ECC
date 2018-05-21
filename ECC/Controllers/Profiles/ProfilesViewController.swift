@@ -12,23 +12,16 @@ class ProfilesViewController: UIViewController, UITableViewDelegate, UITableView
 {
     // MARK: - Properties
     var profiles = [Profile]()
-    
+    // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!    
     
     // MARK: - Lifecycle
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
         initTableView()
         initData()//since data is local file, we can instantiate in viewDidLoad
-    }
-    
-    override func viewDidAppear(_ animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        
     }
     
     override func didReceiveMemoryWarning()
@@ -103,9 +96,6 @@ class ProfilesViewController: UIViewController, UITableViewDelegate, UITableView
         
         return cell
     }
-    
-    
-    
     
     
     

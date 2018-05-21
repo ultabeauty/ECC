@@ -2,7 +2,7 @@
 //  IntroViewController.swift
 //  ECC
 //
-//  Created by Eby, Nicholas on 5/10/18.
+//  Created by NEBY on 5/10/18.
 //  Copyright © 2018 Nicholas Eby. All rights reserved.
 //
 
@@ -80,7 +80,6 @@ class IntroVideoViewController: UIViewController, WKScriptMessageHandler
         super.viewDidDisappear(animated)
         
         webView.load(URLRequest(url: URL(string:"about:blank")!))
-        
     }
     
     

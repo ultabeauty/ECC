@@ -2,7 +2,7 @@
 //  IntroViewController.swift
 //  ECC
 //
-//  Created by Eby, Nicholas on 5/7/18.
+//  Created by NEBY on 5/7/18.
 //  Copyright © 2018 Nicholas Eby. All rights reserved.
 //
 
@@ -10,7 +10,8 @@ import UIKit
 
 class IntroViewController: UIViewController
 {
-
+    
+    // MARK: - Lifecycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -33,6 +34,7 @@ class IntroViewController: UIViewController
     }
     
     
+    // MARK: - User Actions
     @IBAction func done(_ sender: Any)
     {
         self.dismiss(animated: true, completion: nil)

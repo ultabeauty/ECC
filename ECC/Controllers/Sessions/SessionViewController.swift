@@ -2,7 +2,7 @@
 //  SessionViewController.swift
 //  ECC
 //
-//  Created by Eby, Nicholas on 5/1/18.
+//  Created by NEBY on 5/1/18.
 //  Copyright © 2018 Nicholas Eby. All rights reserved.
 //
 
@@ -20,8 +20,9 @@ class SessionViewController: UICollectionViewController, UICollectionViewDelegat
         super.viewDidLoad()
         
         initCollectioView()
-        initData()//since data is local file, we can instantiate in viewDidLoad
+        initData()//since data is local file, we can init in viewDidLoad
     }
+    
     
     override func viewDidAppear(_ animated: Bool)
     {
@@ -29,7 +30,7 @@ class SessionViewController: UICollectionViewController, UICollectionViewDelegat
         
         initOnboarding()
     }
-    
+
 
     override func didReceiveMemoryWarning()
     {
@@ -71,8 +72,9 @@ class SessionViewController: UICollectionViewController, UICollectionViewDelegat
     // MARK: UICollectionViewDataSource
     func initCollectioView()
     {
-        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier:"SessionCollectionCell")
+
     }
+    
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int
     {
@@ -84,6 +86,7 @@ class SessionViewController: UICollectionViewController, UICollectionViewDelegat
     {
         return sessions.count
     }
+    
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
@@ -126,6 +129,7 @@ class SessionViewController: UICollectionViewController, UICollectionViewDelegat
         }
     }
 
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
         let session = sessions[indexPath.row]
@@ -176,6 +180,7 @@ class SessionViewController: UICollectionViewController, UICollectionViewDelegat
     
     
     
+    // MARK: - AVKit
     func playVideo(filename:String)
     {
         let filename_components = filename.components(separatedBy: ".")
@@ -196,6 +201,7 @@ class SessionViewController: UICollectionViewController, UICollectionViewDelegat
     }
     
     
+    // MARK: - Onboarding
     func initOnboarding()
     {
         if(UserDefaults.standard.string(forKey: "kSchoolSelection") == nil)

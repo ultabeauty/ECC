@@ -12,11 +12,11 @@ import MapKit
 class MapViewController: UIViewController, MKMapViewDelegate
 {
     // MARK: - Properties
+    var firstLoad : Bool = true
+    // MARK: - Outlets
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var locationImageView: UIImageView!
     
-    var firstLoad : Bool = true
-
     
     // MARK: - Lifecycle
     override func viewDidLoad()
@@ -37,11 +37,16 @@ class MapViewController: UIViewController, MKMapViewDelegate
         loadDataForMapRegionAndBikes()
     }
     
+    override func didReceiveMemoryWarning()
+    {
+        super.didReceiveMemoryWarning()
+    }
 
     
     
     
-    
+    // MARK: - MapView
+
     func preloadMap()
     {
         let center = CLLocationCoordinate2D(latitude: 41.888181845932714, longitude: -87.637026469456373)
@@ -50,7 +55,6 @@ class MapViewController: UIViewController, MKMapViewDelegate
         mapView.setRegion(region, animated: false)
     }
     
-
     
     func registerAnnotationViewClasses()
     {
@@ -114,6 +118,9 @@ class MapViewController: UIViewController, MKMapViewDelegate
     }
     
     
+    
+    
+    // MARK: - Utilites
     func showOptions(marker:Marker)
     {
         let alert = UIAlertController(title: "Options", message: nil, preferredStyle: .actionSheet)
@@ -158,13 +165,4 @@ class MapViewController: UIViewController, MKMapViewDelegate
         }
         
     }
-    
-    
-    
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }

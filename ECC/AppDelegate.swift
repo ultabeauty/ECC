@@ -14,33 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
-    {        
-        if(UserDefaults.standard.string(forKey: "kSchoolSelection") != nil)
-        {
-            let school = UserDefaults.standard.string(forKey: "kSchoolSelection")
-            
-            if(school == "LakeView")
-            {
-                let lake_view = UIColor.init(named: "Lake_View") ?? UIColor.red
-
-                UITabBar.appearance().tintColor = lake_view
-            }
-            else if(school == "MicheleClark")
-            {
-                let michele_clark = UIColor.init(named: "Michele_Clark") ?? UIColor.yellow
-
-                UITabBar.appearance().tintColor = michele_clark
-            }
-            else
-            {
-                
-            }
-        }
-        else
-        {
-            let dark_grey = UIColor.init(named: "Dark_Grey") ?? UIColor.darkGray
-            UITabBar.appearance().tintColor = dark_grey
-        }
+    {
 
         return true
     }

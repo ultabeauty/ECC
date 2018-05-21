@@ -13,9 +13,9 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
 {
     // MARK: - Properties
     var resources = [Resource]()
-    
-    @IBOutlet weak var tableView: UITableView!
     var documentInteractionController: UIDocumentInteractionController = UIDocumentInteractionController()
+    // MARK: - Outlets
+    @IBOutlet weak var tableView: UITableView!
 
 
     // MARK: - Lifecycle
@@ -42,9 +42,6 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
     
     
     
@@ -76,7 +73,7 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK: - TableView
     func initTableView()
     {
-
+        
     }
     
     

@@ -14,8 +14,12 @@
                 "smallImageURL":"banner_lobby_small",
                 "largeImageURL":"banner_lobby",
                 "longDescription":"Upon arrival at lobby of 120 S Riverside, the Ulta team will assist you in navigating up to our office on the 15th floor.",
-                "takeaways":[],
-                "authors":[]
+                "takeaways":[
+                
+                ],
+                "authors":[
+                
+                ]
                 },
                 {
                 "type":1,
@@ -184,13 +188,15 @@
                 "smallImageURL":"banner_pizza",
                 "largeImageURL":"banner_lunch_large",
                 "longDescription":"A Pizza lunch will be served. Food will be located just outside the meetings room. After getting your food, please take a seat back in the meeting rooms.\n\nFor today's lunch panel we have some of Ulta Beauty's leading digital experts.\n\nWe'll be taking questions from the audience, so please have some topics in mind.",
-                "takeaways":[],
+                "takeaways":[
+                
+                ],
                 "authors":[
                            {
-			   "name":"Michelle Pacynski",
+                           "name":"Michelle Pacynski",
                            "title":"VP, Digital Innovation",
                            "imageURL":"profiles_mpacynski"
-			   },
+                           },
                            {
                            "name":"Jeff Klonowski",
                            "title":"Director, Digital Site Experience",
@@ -201,7 +207,7 @@
                            "title":"Director, Digital Experience & Operations",
                            "imageURL":"profiles_rgibson"
                            }
-                        ]
+                           ]
                 },
                 {
                 "type":1,
@@ -272,7 +278,9 @@
                 "smallImageURL":"banner_closing",
                 "largeImageURL":"banner_closing_large",
                 "longDescription":"On behalf of the entire Ulta Beauty team, we thank you for attending our first ever Day of Code event.\n\nWe hope you all enjoyed the knowledge that we shared as much as we enjoyed delivering it to you.\n\nRemember, it takes a village to build a mobile app and, potentially in the future, we might see you in ours.",
-                "takeaways":[],
+                "takeaways":[
+                
+                ],
                 "authors":[
                            {
                            "name":"Joe Rago",

@@ -85,8 +85,6 @@ class SurveyViewController: UIViewController, WKNavigationDelegate {
     }
     
     
-    
-    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)
     {
         if keyPath == "estimatedProgress"
@@ -95,7 +93,8 @@ class SurveyViewController: UIViewController, WKNavigationDelegate {
         }
     }
     
-    // MARK: - Utility
+    
+    // MARK: - Utilites
     func insertContentsOfCSSFile(into webView: WKWebView)
     {
         // This is more of a "hack" and is not guaranteed to work / also in a commercial grade app, we would customize this at the vendor level.
@@ -109,12 +108,9 @@ class SurveyViewController: UIViewController, WKNavigationDelegate {
     }
     
     
-    
+    // MARK: - User Actions
     @IBAction func done(_ sender:Any)
     {
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    
 }
